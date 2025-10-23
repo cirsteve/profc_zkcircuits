@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "poseidon-hash": "^1.0.1"
+  },
+  "name": "circuits",
+  "description": "Exercises for learning about zk tools. All exercises and solutions have been guided by Claude by Anthropic.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cirsteve/profc_zkcircuits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cirsteve/profc_zkcircuits/issues"
+  },
+  "homepage": "https://github.com/cirsteve/profc_zkcircuits#readme"
+}
