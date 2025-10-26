@@ -13,6 +13,6 @@ if [[ -z "$VKEY" || -z "$PUBLIC" || -z "$PROOF" ]]; then
   exit 1
 fi
 
-snarkjs groth16 verify "$VKEY" "$PUBLIC" "$PROOF"
+npx snarkjs groth16 verify "$VKEY" "$PUBLIC" "$PROOF"
 
 exit 0

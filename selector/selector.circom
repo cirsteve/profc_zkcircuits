@@ -24,4 +24,4 @@ template Selector() {
     out <== p1 + p2;
 }
 
-component main = Selector();
+//component main = Selector();

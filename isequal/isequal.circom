@@ -30,4 +30,4 @@ template IsEqual() {
 
 }
 
-component main = IsEqual();
+// component main = IsEqual();

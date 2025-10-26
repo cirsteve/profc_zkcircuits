@@ -14,7 +14,7 @@ if [[ -z "$ZKEY" || -z "$WITNESS" ]]; then
   exit 1
 fi
 
-snarkjs groth16 prove "$ZKEY" "$WITNESS" "$OUT_PROOF" "$OUT_PUBLIC"
+npx snarkjs groth16 prove "$ZKEY" "$WITNESS" "$OUT_PROOF" "$OUT_PUBLIC"
 
 echo "Proof: $OUT_PROOF"
  echo "Public: $OUT_PUBLIC"

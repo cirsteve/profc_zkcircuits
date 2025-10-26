@@ -5,7 +5,7 @@ set -euo pipefail
 # Usage: ./compile.sh <circuit.circom> [outdir]
 
 CIRCUIT_FILE=${1:-}
-OUT_DIR=${2:-dist}
+OUT_DIR=${2:-outputs}
 
 if [[ -z "$CIRCUIT_FILE" ]]; then
   echo "Usage: $0 <circuit.circom> [outdir]"

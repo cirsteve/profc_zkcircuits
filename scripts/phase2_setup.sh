@@ -29,19 +29,19 @@ tmp_prefix="$(basename "$OUT_ZKEY" .zkey)"
 prepared_ptau="${tmp_prefix}_prepared.ptau"
 
 echo "=== Phase2 Step 1/4: Preparing ptau for phase2 ==="
-snarkjs powersoftau prepare phase2 "$PTAU" "$prepared_ptau" -v
+npx snarkjs powersoftau prepare phase2 "$PTAU" "$prepared_ptau" -v
 
 echo ""
 echo "=== Phase2 Step 2/4: Groth16 setup (creating zkey) ==="
-snarkjs groth16 setup "$R1CS" "$prepared_ptau" "$OUT_ZKEY"
+npx snarkjs groth16 setup "$R1CS" "$prepared_ptau" "$OUT_ZKEY"
 
 echo ""
 echo "=== Phase2 Step 3/4: Verifying zkey ==="
-snarkjs zkey verify "$R1CS" "$prepared_ptau" "$OUT_ZKEY"
+npx snarkjs zkey verify "$R1CS" "$prepared_ptau" "$OUT_ZKEY"
 
 echo ""
 echo "=== Phase2 Step 4/4: Exporting verification key ==="
-snarkjs zkey export verificationkey "$OUT_ZKEY" "$OUT_VKEY"
+npx snarkjs zkey export verificationkey "$OUT_ZKEY" "$OUT_VKEY"
 
 echo ""
 echo "✓ Phase2 setup complete!"
